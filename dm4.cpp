@@ -2,16 +2,15 @@
 using namespace std;
 
 int main(){
-    int i,cnt=0,num;
-    num = rand();
+    int i,cnt=0,num1,num2;
+    num1 = rand();
+    num2 = rand();
 
-    for(i=0;i<3;i++){
-        if(num % 2 == 1)cout << "coin is head" << endl;
-        else {cout << "coin is tail" << endl;
-        cnt++;}
-    }
+    cout << "Rolling the dice..." << endl;
+    cout << "Die 1 :" << (num1%6) << endl;
+    cout << "Die 2 :" << (num2%6) << endl;
 
-    cout << "head : " << (3-cnt) << "times tail : " << cnt << "times"<< endl;
+    cout << "Total Value : " << num1+num2  << endl;
 
     return 0;
 }
